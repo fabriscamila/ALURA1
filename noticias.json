@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "titulo": "Vacina altera o DNA humano",
+    "categoria": "Saúde",
+    "classificacao": "FALSA",
+    "frente": "Vacina altera o DNA humano.",
+    "verso": "As vacinas de mRNA não alteram o DNA humano. Elas apenas instruem células a produzir proteínas temporariamente.",
+    "fonte": "https://www.who.int/news-room/fact-sheets/detail/vaccines-and-autism",
+    "dataVerificacao": "2026-06-02"
+  },
+  {
+    "id": 2,
+    "titulo": "Tomar vitamina C previne totalmente o resfriado",
+    "categoria": "Saúde",
+    "classificacao": "FALSA",
+    "frente": "Tomar vitamina C previne totalmente o resfriado.",
+    "verso": "Vitamina C pode reduzir ligeiramente a duração do resfriado, mas não previne totalmente.",
+    "fonte": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5409678/",
+    "dataVerificacao": "2026-06-02"
+  },
+  {
+    "id": 3,
+    "titulo": "O modo anônimo impede rastreamento completo",
+    "categoria": "Tecnologia",
+    "classificacao": "PARCIAL",
+    "frente": "O modo anônimo impede rastreamento completo.",
+    "verso": "O modo anônimo não salva histórico localmente, mas não impede rastreamento por sites ou provedores de internet.",
+    "fonte": "https://www.kaspersky.com/resource-center/definitions/incognito-mode",
+    "dataVerificacao": "2026-06-02"
+  }
+]
