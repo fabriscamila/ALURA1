@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flashcards - FactCheck Cards</title>
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/cards.css">
 </head>
+
 <body>
-  <h1>Flashcards de Checagem de Notícias</h1>
-  <input type="text" id="search" placeholder="Pesquisar notícia...">
-  <div id="cards-container"></div>
+  <header>
+    <h1>Flashcards de Checagem de Notícias</h1>
+  </header>
+
+  <main>
+    <input type="text" id="search" placeholder="Pesquisar notícia...">
+    
+    <!-- Container obrigatório para os cards -->
+    <div id="cards-container"></div>
+  </main>
 
   <script src="js/cards.js"></script>
 </body>

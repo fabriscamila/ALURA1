@@ -1,9 +1,19 @@
+/* Container flexível para vários cards */
+#cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Cartão individual */
 .card {
   width: 350px;
   height: 240px;
   perspective: 1000px;
-  margin: 20px auto;
   cursor: pointer;
+  flex-shrink: 0; /* Mantém tamanho fixo no flex */
 }
 
 .card-inner {
@@ -12,12 +22,15 @@
   height: 100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  border-radius: 12px;
 }
 
+/* Efeito de virar */
 .card.flipped .card-inner {
   transform: rotateY(180deg);
 }
 
+/* Frente e verso do card */
 .front, .back {
   position: absolute;
   width: 100%;
@@ -26,6 +39,10 @@
   backface-visibility: hidden;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .front {
@@ -35,4 +52,23 @@
 .back {
   background: #f4f4f4;
   transform: rotateY(180deg);
+}
+
+/* Pequenos ajustes de texto */
+.front h3, .back h4 {
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.front p, .back p {
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+    height: auto;
+  }
 }
